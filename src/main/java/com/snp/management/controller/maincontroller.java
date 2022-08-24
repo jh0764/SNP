@@ -12,4 +12,10 @@ public class maincontroller {
         return "main";
     }
 
+    @GetMapping("join")
+    public String join() {
+
+        return "join";
+    }
+
 }

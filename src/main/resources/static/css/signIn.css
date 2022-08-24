@@ -18,6 +18,10 @@ body {
   margin: auto;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 .form-signIn .checkbox {
   font-weight: 400;
 }
@@ -26,7 +30,7 @@ body {
   z-index: 2;
 }
 
-.form-signIn input[type="email"] {
+.form-signIn input[type="text"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -39,7 +43,9 @@ body {
 }
 
 .find-wrap {
+  margin: 20px;
   text-align: center;
+
 }
 
 .find-text {
@@ -50,28 +56,9 @@ body {
   color: #888;
 }
 
-ul {
-  list-style: none;
-  padding: 20px 60px;
+.find-pw, .find-id {
+    margin: 3px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-right: 1px solid gainsboro;
 }
-
-.find-wrap li {
-  padding-left: 20px;
-  position: relative;
-  display: inline-block;
-}
-
-.find-wrap li+li a::before {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 7px;
-    width: 1px;
-    height: 12px;
-    border-radius: 0.5px;
-    background-color: #dadada;
-}
-
-.find-wrap li:first-child::before {
-    content: none;
- }
