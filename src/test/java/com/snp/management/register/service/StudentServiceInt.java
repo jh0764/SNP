@@ -20,6 +20,7 @@ public class StudentServiceInt {
     public void register(){
         StudentDTO studentDTO = new StudentDTO();
         studentDTO.setName("김영준");
+        studentDTO.setSchool("구서초등학교");
 
     }
 }
