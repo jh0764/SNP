@@ -2,8 +2,9 @@ package com.snp.management.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class maincontroller {
 
     @GetMapping("main")
@@ -16,6 +17,10 @@ public class maincontroller {
     public String join() {
 
         return "join";
+    }
+    @GetMapping("/api/hello")
+    public String test() {
+        return "Hello, world!";
     }
 
 }
