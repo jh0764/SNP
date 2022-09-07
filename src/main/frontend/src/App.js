@@ -1,5 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./login/Login";
+import Join from "./join/Join";
 
 function App() {
   const [hello, setHello] = useState('')
@@ -12,7 +15,12 @@ function App() {
 
   return (
       <div>
-        백엔드에서 가져온 데이터입니다 : {hello}
+        <BrowserRouter>
+           <Routes>
+             <Route path="/" exact element={<Login />} />
+             <Route path="/join" exact element={<Join />} />
+           </Routes>
+        </BrowserRouter>
       </div>
   );
 }
