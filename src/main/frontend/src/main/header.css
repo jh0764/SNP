@@ -1,0 +1,12 @@
+.bg-dark{
+    height: 5em;
+}
+
+.btn-outline-secondary{
+    margin:10px;
+    height:40px;
+}
+
+.navbar-expand .navbar-nav .nav-link{
+    margin: 10px;
+}
