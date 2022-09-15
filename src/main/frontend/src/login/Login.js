@@ -43,7 +43,7 @@ const Login = () => {
             <span className={(style.findText, style.findPw)}>
               비밀번호 찾기
             </span>
-            <span className={(style.findText, style.findId)}><Link to="/readingTest">회원가입</Link></span>
+            <span className={(style.findText, style.findId)}><Link to="/readingTest">아이디 찾기</Link></span>
             <span className={(style.findText, style.signUp)}>
               <Link to="/join">회원가입</Link>
             </span>

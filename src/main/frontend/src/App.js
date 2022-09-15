@@ -18,9 +18,9 @@ function App() {
       <div>
         <BrowserRouter>
            <Routes>
-             <Route path="/" exact element={<Login />} />
-             <Route path="/join" exact element={<Join />} />
-             <Route path="/readingTest" exact element={<ReadingTest />} />
+             <Route path="/" element={<Login />} />
+             <Route path="join" element={<Join />} />
+             <Route path="readingTest" element={<ReadingTest />} />
            </Routes>
         </BrowserRouter>
       </div>
