@@ -1,5 +1,6 @@
 package com.snp.management.controller;
 
+import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -12,4 +13,9 @@ public class maincontroller {
         return "main";
     }
 
+//    @GetMapping("join")
+//    public String join() {
+//
+//        return "join";
+//    }
 }
