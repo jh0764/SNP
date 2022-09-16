@@ -32,7 +32,6 @@ dependencies {
 	//mysql
 	runtimeOnly 'mysql:mysql-connector-java'
 	annotationProcessor 'org.projectlombok:lombok'
-
 	// lombok
 	compileOnly 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
@@ -84,3 +83,4 @@ task copyReactBuildFiles(type: Copy) {
 	from "$frontendDir/build"
 	into "$projectDir/src/main/resources/static"
 }
+
