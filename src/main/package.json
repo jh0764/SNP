@@ -1,6 +1,21 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^0.27.2",
     "http-proxy-middleware": "^2.0.6"
+=======
+    "@nivo/bar": "^0.80.0",
+    "@nivo/core": "^0.80.0",
+    "axios": "^0.27.2",
+    "chart.js": "^3.9.1",
+    "http-proxy-middleware": "^2.0.6",
+    "react-chartjs-2": "^4.3.1",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+>>>>>>> 2d0b2794b8b80c7ec9600b23434ba533707dcba4
   }
 }
