@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useEffect, useState} from 'react';
+import axios from 'axios';
 import {ResponsiveBar} from "@nivo/bar";
 
 const Speed = ({data}) => {
+    const [speedData, setspeedData] = useState('');
+
+    useEffect(() => {
+        axios.get('/api/readingTest')
+            .then(response => setspeedData(response.data))
+            .catch(error => console.log(error))
+        console.log(speedData);
+    }, [speedData]);
+
     return (
         <div style={{width: "1500px", height: "400px", margin: "0 auto"}}>
+            <h1>이것은 넘어온 데이터2 : {speedData}</h1>
             <ResponsiveBar
                 data={[
                     {

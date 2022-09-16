@@ -51,12 +51,14 @@
   padding-right: 11px;
   font-size: 14px;
   border-right: 1px solid gainsboro;
+  text-decoration: none;
 }
 
 .signUp {
   margin: 5px;
   padding-right: 10px;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .button {

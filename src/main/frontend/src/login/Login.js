@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import style from "./Login.module.css";
+import {Link} from "react-router-dom";
 
 const Login = () => {
   return (
@@ -41,9 +41,11 @@ const Login = () => {
           </Button>
           <div className={style.findWrap}>
             <span className={(style.findText, style.findPw)}>
-              비밀번호 찾기
+               <Link to="/readingTest">차트</Link>
             </span>
-            <span className={(style.findText, style.findId)}><Link to="/readingTest">아이디 찾기</Link></span>
+            <span className={(style.findText, style.findId)}>
+              아이디 찾기
+            </span>
             <span className={(style.findText, style.signUp)}>
               <Link to="/join">회원가입</Link>
             </span>
