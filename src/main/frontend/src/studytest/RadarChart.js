@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from 'react';
+import axios from 'axios';
 import {
     registerables,
     Chart as ChartJS,
@@ -19,6 +20,10 @@ ChartJS.register(
     Legend
     , ...registerables
 );
+
+
+
+
     const labels = ["자기주도학습", "교육환경", "언어능력", "책에대한관심도", "작문능력","사고/창의력","계획성"];
 export const data = {
         labels,
@@ -73,10 +78,19 @@ export const data = {
                 padding: 20
             }
         };
-        
-function Radarchart(){
+
+const Radarchart = () =>{
+    const [studydata, setstudydata] = useState('')
+
+    useEffect(() => {
+        axios.get('/api/studytest')
+            .then(response => setstudydata(response.data))
+            .catch(error => console.log(error))
+    }, []);
 return (
+
     <div>
+        <h1>{studydata}</h1>
     <Radar options={options}
     data={data} 
     width={2000}
