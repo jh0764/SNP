@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css'; // css import
+import './calendarr.css'
 
-function MyApp() {
-  const [value, onChange] = useState(new Date());
 
-  return (
-    <div>
-      <Calendar onChange={onChange} 
-      locale="en-EN"
-      showNeighboringMonth={false}
-      value={value} />
-    </div>
-  );
+function Calendarr() {
+    const [value, onChange] = useState(new Date());
+
+    return (
+        <div>
+            <Calendar onChange={onChange} value={value}  locale="en-EN"/>
+        </div>
+    );
 }
-export default MyApp;
+
+export default Calendarr;

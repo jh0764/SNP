@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudyTestController {
     @GetMapping("/api/studytest")
-    public String Radartest(){
-        return "테스트 중";
-
+    public String test(){
+        return "테스트중";
     }
 }

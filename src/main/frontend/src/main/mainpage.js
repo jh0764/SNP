@@ -1,24 +1,23 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; //부트스트랩
 import Header from './header';
-import MyApp from "./calendar";
-import Tables from "./table";
+import Calendarr from "./calendar";
 import "./mainpage.css";
+import StudentTable from "./table";
 
 
 const Mainpage = () => {
-
   return (
     <div className="mainpage">
       <Header></Header>
       <div className="mainbody">
       <div className="div1">
-      <MyApp></MyApp>
-      <Tables/>
+          <Calendarr/>
       </div>
-      <div className="tablediv1">
-      <Tables></Tables>
-      </div>
+        <StudentTable/>
+
+
+
       </div>
       </div>
   );

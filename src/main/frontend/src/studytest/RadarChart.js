@@ -20,10 +20,6 @@ ChartJS.register(
     Legend
     , ...registerables
 );
-
-
-
-
     const labels = ["자기주도학습", "교육환경", "언어능력", "책에대한관심도", "작문능력","사고/창의력","계획성"];
 export const data = {
         labels,
