@@ -13,7 +13,9 @@ const Mainpage = () => {
       <div className="mainbody">
       <div className="div1">
           <Calendarr/>
+          <StudentTable></StudentTable>
       </div>
+          <hr className="one"></hr>
         <StudentTable/>
 
 

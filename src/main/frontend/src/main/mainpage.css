@@ -1,9 +1,13 @@
 .div1{
     display: flex;
-    margin-left: 5em;
-    margin-right: 5em;
+
 }
 .tablediv1{
     padding-left: 20em;
+}
+.one{
+    max-width: 100%;
+    color: black;
+    margin: 3em;
 }
 

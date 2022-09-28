@@ -1,0 +1,17 @@
+.border1{
+    width: 70%;
+    height: 100%;
+    border: 2px solid #a6d4fa;
+    display: inline-flex;
+    border-radius: 5px;
+    margin: 10px;
+}
+label{
+    font-weight: bolder;
+    color:#757575;
+    margin:5px;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+    color:#bdbdbd;
+    margin:0;
+}
