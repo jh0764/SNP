@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+
 import {
     registerables,
     Chart as ChartJS,
@@ -20,8 +21,12 @@ ChartJS.register(
     Legend
     , ...registerables
 );
+
+
+
+
     const labels = ["자기주도학습", "교육환경", "언어능력", "책에대한관심도", "작문능력","사고/창의력","계획성"];
-export const data = {
+export const datas = {
         labels,
         datasets: [
             {
@@ -32,7 +37,7 @@ export const data = {
                 poingBorderColor: "#fff",
                 pointHoverBackgroundColor: "#fff",
                 pointHoverBorderColor: "rgba(34, 202, 236, 1)",
-                data: [13, 10, 12, 6, 5, 10, 10]
+                data: [11, 18, 14, 16, 7, 11, 17]
             }
         ]
         };
@@ -76,19 +81,13 @@ export const data = {
         };
 
 const Radarchart = () =>{
-    const [studydata, setstudydata] = useState('')
 
-    useEffect(() => {
-        axios.get('/api/studytest')
-            .then(response => setstudydata(response.data))
-            .catch(error => console.log(error))
-    }, []);
 return (
 
     <div>
-        <h1>{studydata}</h1>
+        <h1>학습습관검사</h1>
     <Radar options={options}
-    data={data} 
+    data={datas}
     width={2000}
     height={3000}/>
     </div>

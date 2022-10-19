@@ -1,26 +1,35 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css"; //부트스트랩
 
+import "./jhRouter"
+import axios from "axios";
+import {useState} from "react";
+import JhRouter from "./jhRouter";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Studytestpage from './studytest/studytestpage';
-import Mainpage from './main/mainpage';
-import { Link } from 'react-router-dom';
 
 const App = () => {
+    const [data, setData] = useState();
+    const onClick = () =>{
+        axios
+            .get('api/studytest')
+            .then((response) => {
+                setData(response.data);
+            });
+    }
+
+
   return (
     <div className="App">
-      <BrowserRouter>
-      <ul>
-        <li>
-          <Link to="/studytest/studytestpage">studytestpage</Link>
-        </li>
-      </ul>
-      <Routes>
-      <Route path="/studytest/studytestpage" element={<Studytestpage/>} />
-      <Route path="/" element={<Mainpage/>} />
-      </Routes>
-      </BrowserRouter>
+     <JhRouter/>
+        <div>
+        <button onClick={onClick}>차트데이터</button>
+        </div>
+        {data && (
+            <textarea
+                rows={3}
+                value={JSON.stringify(data,null,2)}
+                readOnly={true}/>
+        )}
     </div>
   );
 }
