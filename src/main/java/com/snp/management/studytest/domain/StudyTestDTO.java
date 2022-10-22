@@ -8,11 +8,11 @@ public class StudyTestDTO {
 
 
     private String language;
-    private String practice;
-    private String readpractice;
+    private String selflearning;
+    private String eduenvironment;
     private String writing;
-    private String concentration;
-    private String ability;
-    private String study;
+    private String bookinterest;
+    private String ingenuity;
+    private String plans;
 
 }
