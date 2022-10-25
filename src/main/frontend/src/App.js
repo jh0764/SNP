@@ -4,8 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css"; //부트스트랩
 
 import JhRouter from "./jhRouter";
 
-import {accordionClasses} from "@mui/material";
-
 
 const App = () => {
 
